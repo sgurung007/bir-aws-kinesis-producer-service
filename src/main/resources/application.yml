@@ -1,0 +1,6 @@
+server:
+  port: 9193
+spring:
+  application:
+    name: aws-kinesis-producer-service
+
