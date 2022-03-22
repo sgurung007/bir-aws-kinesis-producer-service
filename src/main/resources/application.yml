@@ -15,5 +15,5 @@ spring:
     function:
       definition: produceOrder
 
-originator: suraj-kinesis-1
+originator: aws-kinesis-producer-service
 
