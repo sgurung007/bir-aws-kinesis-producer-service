@@ -1,6 +1,19 @@
 server:
   port: 9195
+
 spring:
   application:
     name: AWS-KINESIS-PRODUCER-SERVICE
+  cloud:
+    stream:
+      bindings:
+        produceOrder-out-0:
+          destination: suraj-kinesis-1
+          content-type: application/json
+          producer:
+            partitionKeyExpression: "1"
+    function:
+      definition: produceOrder
+
+originator: suraj-kinesis-1
 
