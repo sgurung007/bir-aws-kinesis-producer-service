@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
  * @since 3/21/2022
  */
 @RestController
-@RequestMapping("/kinesis")
+@RequestMapping("/aws-kinesis-producer")
 public class EventController {
     @Value("${originator}")
     private String originator;
