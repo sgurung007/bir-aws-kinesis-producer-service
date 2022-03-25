@@ -29,6 +29,6 @@ public class AWSKinesisProdcuer {
     public void sendOrder(Event event){
         event.setId(UUID.randomUUID());
         this.orderEvent.offer(event);
-        log.info("Event sent: {}",event.toString());
+        log.info("Event sent: {}",event.getOrder().toString());
     }
 }
